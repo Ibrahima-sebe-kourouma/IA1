@@ -3,9 +3,9 @@ import numpy as np
 import pickle
 
 
-# Charger le modèle
-with open('./BeansArbre.pkl', 'rb') as model_file:
-    model_loaded = pickle.load(model_file)
+# Chargement du modèle
+model_name='./BeansArbre.pkl'
+model_loaded=pickle.load(open(model_name,'rb'))
 # Fonction de prédiction
 def pred_proba(data):
     # Convertir la donnée en un tableau numpy
